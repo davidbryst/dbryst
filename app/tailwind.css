@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-vertical {
+        /* writing-mode: vertical-rl; */
+        /* text-orientation: upright; */
+        transform: rotate(-90deg);
+    }
+
+    .scroll-style::-webkit-scrollbar {
+      width: 4px;
+      padding: 1px;
+    }
+    .scroll-style::-webkit-scrollbar-track {
+      background: #292524;
+      border-radius: 4px;
+    }
+    .scroll-style::-webkit-scrollbar-thumb {
+        background: #998D85;
+        border-radius: 2px;
+    }
+    .scroll-style::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+}
+
+@font-face {
+    font-family: "palatino";
+    src: url(/font/hlct-.ttf);
+}
+@font-face {
+    font-family: "palatino-linotype";
+    src: url(/font/palatino-linotype.ttf);
+}
+@font-face {
+    font-family: "palatino-linotype-bold-italic";
+    src: url(/font/palatino-linotype-grassetto-corsivo.ttf);
+}
+@font-face {
+    font-family: "palatino-linotype-italic";
+    src: url(/font/palatino-linotype-corsivo.ttf);
+}
+@font-face {
+    font-family: "palatino-linotype-bold";
+    src: url(/font/palatino-linotype-grassetto.ttf);
+}
